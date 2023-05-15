@@ -1,0 +1,12 @@
+<h1>Estudios</h1>
+<div class="row">
+  <app-study
+    class="col-"
+    *ngFor="let tech of studies"
+    [training]="tech.training"
+    [institution]="tech.institution"
+    [dateStart]="tech.dateStart"
+    [dateEnd]="tech.dateEnd"
+  >
+  </app-study>
+</div>

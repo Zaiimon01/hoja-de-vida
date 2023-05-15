@@ -1,0 +1,14 @@
+<div class="container">
+    <label>Formacion:</label>
+    {{ training }}
+    <br><br>
+    <label>Institucion:</label>
+    {{ institution }}
+    <br><br>
+    <label>Fecha de inicio:</label>
+    {{ dateStart | date: 'dd-MM-YYYY' }}
+    <br><br>
+    <label>Fecha de fin:</label>
+    {{ dateEnd | date: 'dd-MM-YYYY' }}
+    <br><br>
+</div>

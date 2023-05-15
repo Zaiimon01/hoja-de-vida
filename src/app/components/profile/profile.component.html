@@ -1,0 +1,19 @@
+<div class="container">
+  <img [src]="currentImg" class="profile" />
+  <label>Nombre Completo:</label>
+  {{ name }}
+  <br /><br />
+  <label>Correo:</label>
+  {{ email }}
+  <br /><br />
+  <label>Teléfono:</label>
+  {{ phone }}
+  <br /><br />
+  <label>Dirección:</label>
+  {{ direction }}
+  <br /><br />
+  <label>Redes Sociales: </label>
+  <span *ngFor="let item of socialNetworks">
+    <a [href]="item.link">{{ item.display }}</a>
+  </span>
+</div>

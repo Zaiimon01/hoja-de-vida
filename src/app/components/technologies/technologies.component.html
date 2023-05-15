@@ -1,0 +1,11 @@
+<h1>Tecnologias</h1>
+<div class="row">
+  <app-technology
+    class="col-"
+    *ngFor="let tech of technologies"
+    [name]="tech.name"
+    [level]="tech.level"
+    [logo]="tech.logo"
+  >
+  </app-technology>
+</div>
